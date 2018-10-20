@@ -1,4 +1,4 @@
-package edu.gatech.gtthrifty;
+package edu.gatech.gtthrifty.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -31,6 +31,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import edu.gatech.gtthrifty.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -197,7 +199,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
-        return password.length() > 4;
+        return password.length() > 8;
     }
 
     /**
