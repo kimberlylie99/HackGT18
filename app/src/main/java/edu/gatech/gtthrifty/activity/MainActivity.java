@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         final Button mRequest = findViewById(R.id.req_button);
-        mSell.setOnClickListener(new View.OnClickListener(){
+        mRequest.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 request();
@@ -34,10 +34,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         final Button mBrowse = findViewById(R.id.browse_button);
-        mSell.setOnClickListener(new View.OnClickListener(){
+        mBrowse.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 browse();
+            }
+        });
+
+        final Button mProfile = findViewById(R.id.prof_button);
+        mProfile.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                profile();
             }
         });
     }
@@ -54,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void browse(){
         //Intent intent = new Intent(this, BrowseActivity.class);
+        //startActivity(intent);
+    }
+
+    private void profile(){
+        //Intent intent = new Intent(this, ProfileActivity.class);
         //startActivity(intent);
     }
 
